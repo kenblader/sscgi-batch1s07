@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+progress {
+    
+    border-radius: 20px;
+}
+progress::-webkit-progress-bar {
+    background-color: #e4dddd;
+    border-radius: 7px;
+  }
+  progress::-webkit-progress-value {
+    background-color: #0cfa04;
+    border-radius: 7px;
+  }
+
+#container {
+    display: flex;
+    /* horizontal */
+    justify-content: space-between;
+    /* vertical */
+    align-items: center;
+    height: 100vh;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    
+}
+
+#pacmanCounter{
+    text-align: center;
+    font-size: 35px;
+}
+
+#pacmanCounter h1{
+    font-size: 50px;
+}
+
+#displayBoard {
+    display: grid;
+    grid-template-columns: repeat(16, 50px);
+    grid-template-rows: repeat(16, 50px);
+    border: 4px solid #1F51FF;
+    background-color: #e4dddd;
+}
+
+.square {
+    background-color: #000;
+}
+
+.pacman {
+    /* color: #fff; */
+    background-image: url(../activity/Images/Pacman.svg);
+}
+
+/* =================== Pacman's Ghosts =============== */
+/* red */
+.Blinky {
+    background-image: url(../activity/Images/Ghost-red.svg);
+}
+/* pink */
+.Pinky {
+    background-image: url(../activity/Images/Ghost-pink.svg);
+}
+/* cyan */
+.Inky {
+    background-image: url(../activity/Images/Ghost-cyan.svg);
+}
+/* orange */
+.Clyde {
+    background-image: url(../activity/Images/Ghost-orange.svg);
+}
+/* ==================================================== */
